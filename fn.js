@@ -6,11 +6,6 @@ document.getElementById("menu-elem-skontaktuj").onclick = function() { load_view
 document.getElementById("hamburger").onclick = function () { openMenu() };
 document.getElementById("photo").onclick = function() { location.reload() };
 
-
-// function load_view(divName, fileName) {
-// 	document.getElementById(divName).innerHTML="<object type='text/html' data='"+fileName+".html'></object>";
-// }
-
 function openMenu() {
   var menuList = document.getElementById("mobile-ul");
   var hamburgerStyle = document.getElementById("hamburger");
@@ -58,4 +53,41 @@ function load_view(divName, fileName) {
   };
   xhttp.open("GET", fileName, true);
   xhttp.send();
+}
+
+// PAGE: UMIEJETNOSCI
+/*
+document.getElementById("element1").onmouseover = function() { showDescription( "element1", "TO JEST OPIS") };
+
+function showDescription(divName, description) {
+  var elem = document.getElementById(divName);
+
+  elem.className = "hovered_element";
+  elem.innerHTML = description;
+
+}
+
+function disableDescription(divName) {
+  var elem = document.getElementById(divName);
+
+  elem.className = "slider_element";
+}
+*/
+
+// PAGE: PORTFOLIO
+function x() {
+  var container = document.getElementById('img_containter');
+  var element = container.getElementsByClassName('page_img');
+  var i = 0;
+
+  var inter = setInterval(frame, 3000);
+
+  function frame() {    
+    element[i].style.opacity = "1";
+    window.setTimeout(function x() {element[i].style.opacity = "0";}, 3000);
+    i += 1;
+    if(i == 2) {
+      i = 0;
+    }
+  }
 }

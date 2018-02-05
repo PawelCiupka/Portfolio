@@ -1,0 +1,49 @@
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 80%;
+    height: 80%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.window {
+    width: 85%;
+    height: 85%;
+    border: 1px solid green;
+}
+
+.page_img {
+    width: 85%;
+    height: 85%;
+    position: absolute;
+    background-size: contain;
+    opacity: 0;
+}
+
+
+#left_button , #right_button {
+    width: 6%;
+    height: 15%;
+    border: 0;   
+    background: red;
+    cursor: pointer;
+}
+
+.choice_belt {
+    width: 20%;
+    height: 5%;
+    position: absolute;
+    border: 1px  solid purple;
+    left: 40%;
+    top: 95%;
+
+}
