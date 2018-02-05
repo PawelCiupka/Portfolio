@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<title>Portfolio Paweł Ciupka</title>
+		<link rel="Shortcut icon" href="photos/icon.png" />
+		<link rel="stylesheet" href="styles/index_style.css">
+		<link rel="stylesheet" href="styles/main_content.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	</head>
+	<body>
+
+		<div class="container">
+			<header id="header">
+				<div id="hamburger" class="hamburger1" tabindex="1"></div>
+			</header>
+		
+			<div class="profile-photo">
+				<img id="photo" src="photos/profile_photo3.png" alt="">
+			</div>
+				
+			<div class="information">
+				<h1>Paweł Ciupka</h1>
+				<h2 class="worksite">Student & Freelancer</h2>
+				<!-- <button type="button"  onclick="loadDoc()">XD</button> -->
+			</div>
+			<div class="hire">
+				<button id="menu-elem-skontaktuj">Skontaktuj się</button>
+			</div>
+			
+			<!-- Desktop menu -->
+			<menu id="desktop-menu">
+				<ul id="desktop-ul">
+					<li id="menu-elem-oMnie" class ="desktop-li">O mnie</li>
+					<li id="menu-elem-umiejestnosci" class ="desktop-li">Umiejętności</li>
+					<li id="menu-elem-oferta" class ="desktop-li">Oferta</li>
+					<li id="menu-elem-portfolio" class ="desktop-li">Portfolio</li>
+				</ul>
+			</menu>
+
+			<!-- Mobile menu -->
+				<ul id="mobile-ul" class="mobile-menu">
+					<li id="menu-elem-oMnie" 			class ="mobile-li" onclick="load_view('content', 'contents/oMnie.html')">O mnie</li>
+					<li id="menu-elem-umiejestnosci" 	class ="mobile-li" onclick="load_view('content', 'contents/umiejetnosci.html')">Umiejętności</li>
+					<li id="menu-elem-oferta" 			class ="mobile-li" onclick="load_view('content', 'contents/oferta.html')">Oferta</li>
+					<li id="menu-elem" 					class ="mobile-li" onclick="load_view('content', 'contents/portfolio.html')">Portfolio</li>
+					<li id="menu-elem-skontaktuj"		class ="mobile-li" onclick="load_view('content', 'contents/kontakt.html')">Skontaktuj się</li>
+				</ul>
+			
+			<div class="right-section">
+				<div id="content">
+
+					<div id="x"></div>
+
+					<div class="mainHeader">
+						
+
+						<div class="pageWWW">
+
+							<div class="adjective">
+								<div class="napis1">
+								<div class="letter1">N</div>
+								<div class="letter1">O</div>
+								<div class="letter1">W</div>
+								<div class="letter1">O</div>
+								<div class="letter1">C</div>
+								<div class="letter1">Z</div>
+								<div class="letter1">E</div>
+								<div class="letter1">S</div>
+								<div class="letter1">N</div>
+								<div class="letter1">E</div>		
+							</div>	
+
+							<div class="napis2">
+								<div class="letter2">P</div>
+								<div class="letter2">R</div>
+								<div class="letter2">Z</div>
+								<div class="letter2">E</div>
+								<div class="letter2">J</div>
+								<div class="letter2">R</div>
+								<div class="letter2">Z</div>
+								<div class="letter2">Y</div>
+								<div class="letter2">S</div>
+								<div class="letter2">T</div>
+								<div class="letter2">E</div>
+							</div>							
+							<p>STRONY&nbspINTERNETOWE</p>	
+						
+						</div>
+
+					</div>
+			
+				</div>
+			</div>
+
+		</div>
+
+		<footer>
+			&copy Paweł Ciupka 2018
+		</footer>
+
+		</div>
+
+
+		<script src="fn.js"></script>
+	</body>
+</html>

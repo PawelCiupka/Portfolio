@@ -1,0 +1,227 @@
+/* CONTENT SECTION */
+.mainHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.5em;
+  width: 100%;
+  height: 100%;
+}
+
+.pageWWW {
+	display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 2.5em;
+}
+
+.adjective {
+	width: 8em;
+	height: 1em;
+	position: relative;
+}
+
+.napis1, .napis2 {
+  position: absolute;
+  left: -0.7em;
+}
+
+.pageWWW p {
+  float: left;
+  position: absolute;
+  top: 1em;
+}
+
+.letter1 {
+  float: left;
+  position: absolute;
+  animation: pop1 8s infinite;
+  -webkit-animation: pop1 8s infinite;
+  -moz-animation: pop1 8s infinite;
+  -o-animation: pop1 8s infinite;
+}
+.letter1:nth-child(1) {
+  animation-delay: 0.05s;
+  left: 0.7em;
+}
+.letter1:nth-child(2) {
+  animation-delay: 0.1s;
+  left: 1.4em;
+}
+.letter1:nth-child(3) {
+  animation-delay: 0.15s;
+  left: 2.1em;
+}
+.letter1:nth-child(4) {
+  animation-delay: 0.2s;
+  left: 2.8em;
+}
+.letter1:nth-child(5) {
+  animation-delay: 0.25s;
+  left: 3.5em;
+}
+.letter1:nth-child(6) {
+  animation-delay: 0.3s;
+  left: 4.2em;
+}
+.letter1:nth-child(7) {
+  animation-delay: 0.35s;
+  left: 4.9em;
+}
+.letter1:nth-child(8) {
+  animation-delay: 0.4s;
+  left: 5.6em;
+}
+.letter1:nth-child(9) {
+  animation-delay: 0.45s;
+  left: 6.3em;
+}
+.letter1:nth-child(10) {
+  animation-delay: 0.5s;
+  left: 7em;
+}
+
+.letter2 {
+  float: left;
+  position: absolute;
+  animation: pop2 8s infinite;
+  -webkit-animation: pop2 8s infinite;
+  -moz-animation: pop2 8s infinite;
+  -o-animation: pop2 8s infinite;
+}
+.letter2:nth-child(1) {
+  animation-delay: 0.05s;
+  left: 0.7em;
+}
+.letter2:nth-child(2) {
+  animation-delay: 0.1s;
+  left: 1.4em;
+}
+.letter2:nth-child(3) {
+  animation-delay: 0.15s;
+  left: 2.1em;
+}
+.letter2:nth-child(4) {
+  animation-delay: 0.2s;
+  left: 2.8em;
+}
+.letter2:nth-child(5) {
+  animation-delay: 0.25s;
+  left: 3.5em;
+}
+.letter2:nth-child(6) {
+  animation-delay: 0.3s;
+  left: 4.2em;
+}
+.letter2:nth-child(7) {
+  animation-delay: 0.35s;
+  left: 4.9em;
+}
+.letter2:nth-child(8) {
+  animation-delay: 0.4s;
+  left: 5.6em;
+}
+.letter2:nth-child(9) {
+  animation-delay: 0.45s;
+  left: 6.3em;
+}
+.letter2:nth-child(10) {
+  animation-delay: 0.5s;
+  left: 7em;
+}
+.letter2:nth-child(11) {
+  animation-delay: 0.55s;
+  left: 7.7em;
+}
+.letter2:nth-child(12) {
+  animation-delay: 0.6s;
+  left: 8.4em;
+}
+
+@keyframes pop1 {
+  0% {    transform: scale(0);  }
+  5% {    transform: scale(1);  }
+  45% {    transform: scale(1);  }
+  50% {    transform: scale(0);  }
+  100% {    transform: scale(0);  }
+}
+@keyframes pop2 {
+  0% {    transform: scale(0);  }
+  50% {    transform: scale(0);  }
+  55% {    transform: scale(1);  }
+  95% {    transform: scale(1);  }
+  100% {    transform: scale(0);  }
+}
+
+@-webkit-keyframes pop1 {
+	 0% {    transform: scale(0);  }
+  5% {    transform: scale(1);  }
+  45% {    transform: scale(1);  }
+  50% {    transform: scale(0);  }
+  100% {    transform: scale(0);  }
+}
+@-webkit-keyframes pop2{
+	0% {    transform: scale(0);  }
+  50% {    transform: scale(0);  }
+  55% {    transform: scale(1);  }
+  95% {    transform: scale(1);  }
+  100% {    transform: scale(0);  }
+}
+
+@-moz-keyframes pop1 {
+	 0% {    transform: scale(0);  }
+  5% {    transform: scale(1);  }
+  45% {    transform: scale(1);  }
+  50% {    transform: scale(0);  }
+  100% {    transform: scale(0);  }
+}
+@-moz-keyframes pop2{
+	0% {    transform: scale(0);  }
+  50% {    transform: scale(0);  }
+  55% {    transform: scale(1);  }
+  95% {    transform: scale(1);  }
+  100% {    transform: scale(0);  }
+}
+
+@-o-keyframes pop1 {
+	 0% {    transform: scale(0);  }
+  5% {    transform: scale(1);  }
+  45% {    transform: scale(1);  }
+  50% {    transform: scale(0);  }
+  100% {    transform: scale(0);  }
+}
+@-o-keyframes pop2{
+	0% {    transform: scale(0);  }
+  50% {    transform: scale(0);  }
+  55% {    transform: scale(1);  }
+  95% {    transform: scale(1);  }
+  100% {    transform: scale(0);  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainHeader {
+      font-size: 9vw;
+  }
+
+  .pageWWW {
+    margin-left: -1em;
+  }
+
+  .adjective {
+    width: 8em;
+    height: 1em;
+    position: relative;
+  }
+
+  .napis1, .napis2 {
+    position: absolute;
+    left: -0.7em;
+  }
+
+  .pageWWW p {
+    float: left;
+    position: absolute;
+    top: 1em;
+  }
+}

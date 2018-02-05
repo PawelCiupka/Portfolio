@@ -1,0 +1,29 @@
+p {
+    font-size: 1.2em;
+    margin: 0 0 0.5em 0;
+}
+
+.p1 {
+    font-size: 1.6em;
+    margin: 1.5em 0 0.5em 1em;
+}
+
+.p2 {
+    margin: 0 0 0.5em 0;
+}
+
+.s2 {
+    background: #f9e095;
+}
+
+.s3 {
+    background: #cbffbc;
+}
+
+.s4 {
+    background: #f2bce2;
+}
+
+.s5 {
+    background: rgb(170, 231, 255);
+}
