@@ -1,15 +1,11 @@
 p {
     font-size: 1.2em;
-    margin: 0 0 0.5em 0;
+    margin: 0 0 1em 0;
 }
 
 .p1 {
     font-size: 1.6em;
-    margin: 1.5em 0 0.5em 1em;
-}
-
-.p2 {
-    margin: 0 0 0.5em 0;
+    margin: 2em 0 1em 1em;
 }
 
 .s2 {
@@ -26,4 +22,15 @@ p {
 
 .s5 {
     background: rgb(170, 231, 255);
+}
+
+
+@media screen and (max-width: 768px) {
+    .p1 {
+        margin: 0 0 0.5em 1em;
+    }
+
+    .p5 {
+        margin-bottom: 0;
+    }
 }

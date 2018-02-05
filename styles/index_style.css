@@ -144,7 +144,7 @@ footer {
 	body {
 		background-color: #fff;
 		height: auto;
-		font-size: 5vw;
+		font-size: 3vh;
 	}
 	
 	.container {
@@ -152,7 +152,7 @@ footer {
 		width: 100vw;
 		display: grid; 
 		grid-template-columns: 1fr;
-		grid-template-rows: 4em 25vh 20vh minmax(40.5vh, auto) 3vh;
+		grid-template-rows: 4em 8.1em 7em minmax(13.5em, auto) 1em;
 	}
 
 	header {
@@ -260,16 +260,14 @@ footer {
 		z-index: 1;
 	}
 
-	.mobile-menu li:focus {
-		background: red;
-	}
-
 	.profile-photo {
 		grid-column: 1 / -1;
 		grid-row: 2 / 3;
-
-		justify-self: center;
-		align-self: end;
+		
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-self: flex-start;
 	}
 
 	.profile-photo img {
@@ -284,6 +282,7 @@ footer {
 		grid-column: 1 / -1;
 		grid-row: 3 / 4;
 
+		width: 100%;
 		align-self: start;
 		justify-self: center;
 		text-align: center;
@@ -322,7 +321,10 @@ footer {
 	footer {
 		grid-column: 1 / -1;
 		grid-row: 5 / 6;
-		justify-self: center;
+
+		width: 100%;
+		display: flex;
+		justify-content: center;
 		align-self: center;
 	}
 
@@ -332,12 +334,32 @@ footer {
 		}
 
 		.container {
-			grid-template-rows: 4em 45vh 38vh minmax(90vh, auto) 3vh;
+			grid-template-rows: 4em 13em 13em minmax(20em, auto) 1em;
 		}
 
 		.profile-photo img {
-			height: 40vh;
-			width: 40vh;
+			height: 10em;
+			width: 10em;
+		}
+
+		.mobile-menu li {
+			height: 3.5em;
+		}
+
+		@media screen and (max-height: 370px) {
+			.container {
+				grid-template-rows: 4em 9em 13em minmax(16em, auto) 1em;
+			}
+
+			.profile-photo img {
+				height: 7.5em;
+				width: 7.5em;
+			}
+
+			.mobile-menu li {
+				height: 2.7em;
+			}
+
 		}
 
 	}
