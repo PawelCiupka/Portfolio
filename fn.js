@@ -75,19 +75,52 @@ function disableDescription(divName) {
 */
 
 // PAGE: PORTFOLIO
-function x() {
-  var container = document.getElementById('img_containter');
-  var element = container.getElementsByClassName('page_img');
-  var i = 0;
+//window.onload = function() { x("img_containter", "page_img", 4000); };
 
-  var inter = setInterval(frame, 3000);
+function sleep(timeValue) {
+  var x = 0;
+  var pause = setInterval(p, 100);
+  function p() {
+    if(x == (10*timeValue)) {
+      clearInterval(pause);
+    } else {
+      x += 1
+    }
+  }
+}
 
+function x(containerName, elementName, delay, numberOfElements) {
+  var container = document.getElementById(containerName);
+  var element = container.getElementsByClassName(elementName);
+  var i = 1;
+
+  showAndHideElement(element[0], delay);
+  var interval = setInterval(frame, (delay * 1000));
   function frame() {    
-    element[i].style.opacity = "1";
-    window.setTimeout(function x() {element[i].style.opacity = "0";}, 3000);
+    showAndHideElement(element[i], delay);
+    
     i += 1;
-    if(i == 2) {
+    if(i == numberOfElements) {
       i = 0;
     }
+  }
+}
+
+// Powoduje pokazanie, a nastepnie ukrycie wskazanego elementu
+function showAndHideElement(element, duration) {
+  var i = 0;
+  var interval = setInterval(frame, (5 * duration));
+  function frame() {
+    if(i > 1) {
+      i = 0;
+      clearInterval(interval);
+    } else if(i <= 0.1) {
+      element.style.opacity = (i * 10);
+    } else if(i >= 0.9) {
+      element.style.opacity = (i - 1) * (-10);
+    }
+
+    i += 0.005;
+    console.log(i);
   }
 }

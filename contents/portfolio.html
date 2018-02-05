@@ -5,13 +5,16 @@
     </head>
     <body>
         <div class="slider">
-            <button id="left_button" onclick="x()"><</button>
-            <div id="img_containter" class="window">
+            <button id="left_button" onclick="x('img_containter', 'page_img', 8, 2)"><</button>
+            <div id="img_containter">
                 <img id="p_img"class="page_img" src="photos/WRS_Mechaniczny.png" alt="">
                 <img id="p_img" class="page_img" src="photos/profile_photo3.png" alt="">
             </div>
             <button id="right_button">></button>
-            <div class="choice_belt"></div>
+            <div id="choice_belt">
+                <div class="circle"></div>
+                <div class="circle"></div>
+             </div>
         </div>
     </body>
 </html>
