@@ -121,6 +121,5 @@ function showAndHideElement(element, duration) {
     }
 
     i += 0.005;
-    console.log(i);
   }
 }
