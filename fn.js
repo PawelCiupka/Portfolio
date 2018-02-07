@@ -1,7 +1,7 @@
 document.getElementById("menu-elem-oMnie").onclick = function() { load_view('content', "contents/oMnie.html"); }
 document.getElementById("menu-elem-umiejestnosci").onclick = function() { load_view('content', 'contents/umiejetnosci.html') };
 document.getElementById("menu-elem-oferta").onclick = function() { load_view('content', 'contents/oferta.html') };
-document.getElementById("menu-elem-portfolio").onclick = function() { load_view('content', 'contents/portfolio.html') };
+document.getElementById("menu-elem-portfolio").onclick = function() { load_view('content', 'contents/portfolio.html')};
 document.getElementById("menu-elem-skontaktuj").onclick = function() { load_view('content', 'contents/kontakt.html') };
 document.getElementById("hamburger").onclick = function () { openMenu() };
 document.getElementById("photo").onclick = function() { location.reload() };
@@ -75,7 +75,6 @@ function disableDescription(divName) {
 */
 
 // PAGE: PORTFOLIO
-//window.onload = function() { x("img_containter", "page_img", 4000); };
 
 function sleep(timeValue) {
   var x = 0;
@@ -89,15 +88,21 @@ function sleep(timeValue) {
   }
 }
 
-function x(containerName, elementName, delay, numberOfElements) {
+function x(containerName, elementName, circleName, button1, button2, delay, numberOfElements) {
   var container = document.getElementById(containerName);
   var element = container.getElementsByClassName(elementName);
+  var circle = document.getElementsByClassName(circleName);
+  var leftButton = document.getElementById(button1);
+  var rightButton = document.getElementById(button2);
+  
   var i = 1;
 
-  showAndHideElement(element[0], delay);
+  showAndHideElement(element[0], circle[0], delay);
   var interval = setInterval(frame, (delay * 1000));
   function frame() {    
-    showAndHideElement(element[i], delay);
+    showAndHideElement(element[i], circle[i], delay);
+
+    detectClick('rightButton');
     
     i += 1;
     if(i == numberOfElements) {
@@ -106,20 +111,35 @@ function x(containerName, elementName, delay, numberOfElements) {
   }
 }
 
-// Powoduje pokazanie, a nastepnie ukrycie wskazanego elementu
-function showAndHideElement(element, duration) {
+// Powoduje pokazanie, a nastepnie ukrycie wskazanego elementu 
+function showAndHideElement(element, circle, duration) {
   var i = 0;
+
   var interval = setInterval(frame, (5 * duration));
   function frame() {
-    if(i > 1) {
+
+    if(i >= 1) {
       i = 0;
+      element.style.top = "-200%";
       clearInterval(interval);
-    } else if(i <= 0.1) {
-      element.style.opacity = (i * 10);
-    } else if(i >= 0.9) {
-      element.style.opacity = (i - 1) * (-10);
+    } 
+    else if(i <= 0) {
+      element.style.top = "0%";
+    } 
+    else if(i <= 0.1) {
+      element.style.opacity = (i * 10) + 0.05;
+      circle.style.opacity = (i * 5) + 0.55;
+    } 
+    else if(i >= 0.9) {
+      element.style.opacity = (i - 1) * (-10) - 0.05;
+      circle.style.opacity = (i - 1) * (-5) + 0.55; 
     }
 
     i += 0.005;
   }
+}
+
+
+function detectClick(divId) {
+  divId.onclick = function() { divId.style.background = black;};
 }

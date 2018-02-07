@@ -244,7 +244,7 @@ footer {
 		padding: 0;
 
 		position: absolute;
-		top: -15em;
+		top: -18em;
 		right: 9%;
 		z-index: 1;
 	}
@@ -325,7 +325,7 @@ footer {
 		width: 100%;
 		display: flex;
 		justify-content: center;
-		align-self: center;
+		align-self: end;
 	}
 
 	@media screen and (orientation: landscape) {
