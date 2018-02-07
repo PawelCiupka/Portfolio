@@ -44,7 +44,7 @@
     height: 100%;
     position: absolute; 
     cursor: default;   
-    top: 200%;
+    top: -200%;
     opacity: 0;
 }
 

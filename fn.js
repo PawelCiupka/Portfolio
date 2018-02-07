@@ -1,11 +1,15 @@
 document.getElementById("menu-elem-oMnie").onclick = function() { load_view('content', "contents/oMnie.html"); }
 document.getElementById("menu-elem-umiejestnosci").onclick = function() { load_view('content', 'contents/umiejetnosci.html') };
 document.getElementById("menu-elem-oferta").onclick = function() { load_view('content', 'contents/oferta.html') };
-document.getElementById("menu-elem-portfolio").onclick = function() { load_view('content', 'contents/portfolio.html')};
+document.getElementById("menu-elem-portfolio").onclick = function() { load_view('content', 'contents/portfolio.html') };
 document.getElementById("menu-elem-skontaktuj").onclick = function() { load_view('content', 'contents/kontakt.html') };
+
 document.getElementById("hamburger").onclick = function () { openMenu() };
 document.getElementById("photo").onclick = function() { location.reload() };
 
+//document.body.onload = function() { letsSlide('img_containter', 'a_img', 'circle', 'left_button', 'right_button', 8, 2) };
+
+// Powoduje otworzenie menu na mobile
 function openMenu() {
   var menuList = document.getElementById("mobile-ul");
   var hamburgerStyle = document.getElementById("hamburger");
@@ -26,6 +30,7 @@ function openMenu() {
     }
 }
 
+// Animacja rozwijanego menu na mobile
 function slideMenu(divName, start, end, direction, frameTime) {
   var elem = document.getElementById(divName);
   var i = start;
@@ -41,7 +46,7 @@ function slideMenu(divName, start, end, direction, frameTime) {
   }
 }
 
-
+// Powoduje załadowanie treścią wskazanego obiektu
 function load_view(divName, fileName) {
   var xhttp = new XMLHttpRequest();
   
@@ -55,8 +60,86 @@ function load_view(divName, fileName) {
   xhttp.send();
 }
 
-// PAGE: UMIEJETNOSCI
+
+// START -> PAGE: O MNIE
+// Powoduje zniknięcie przycisków, oraz pokazanie się wiadomości
+function changeText(text) {
+  var b1 = document.getElementById('yes');
+  var b2 = document.getElementById('no');
+  var answer = document.getElementById('answer');
+  b1.style.opacity = 0;
+  b2.style.opacity = 0;
+  answer.style.opacity = 1;
+  answer.innerHTML = text;
+}
+// END -> PAGE: O MNIE
+
+
+// START -> PAGE: PORTFOLIO
+// Funkcja zarządzająca sliderem
+function letsSlide(containerName, elementName, circleName, button1, button2, delay, numberOfElements) {
+  var container = document.getElementById(containerName);
+  var element = document.getElementsByClassName(elementName);
+  var circle = document.getElementsByClassName(circleName);
+  var leftButton = document.getElementById(button1);
+  var rightButton = document.getElementById(button2);
+
+  var i = 1;
+  var x = 0;
+  
+  var interval = setInterval(frame, (5 * delay));
+  function frame() {
+
+    rightButton.onclick = function() {
+      x = 1;
+      element[i].style.opacity = 0;
+      circle[i].style.opacity = 0.5; 
+    }
+
+    leftButton.onclick = function() {
+      x = 0;
+      element[i].style.opacity = 0;
+      circle[i].style.opacity = 0.5; 
+      element[i].style.top = "-200%";
+      i -= 1;
+      if(i < 0) {
+        i = 0;
+      }
+    }
+
+    if(x >= 1) {
+      x = 0;
+      element[i].style.top = "-200%";
+      i += 1;
+      if(i == numberOfElements) {
+        i = 0;
+      }
+     
+    } 
+    else if(x <= 0.005) {
+      element[i].style.top = "0%";
+    } 
+    else if(x <= 0.1) {
+      element[i].style.opacity = (x * 10) + 0.05;
+      circle[i].style.opacity = (x * 5) + 0.55;
+    } 
+    else if(x >= 0.9) {
+      element[i].style.opacity = (x - 1) * (-10) - 0.05;
+      circle[i].style.opacity = (x - 1) * (-5) + 0.55; 
+    }
+    x += 0.005;
+  }
+}
+// END -> PAGE: PORTFOLIO
+
+
+
+
+
+
 /*
+// START -> PAGE: UMIEJETNOSCI
+
 document.getElementById("element1").onmouseover = function() { showDescription( "element1", "TO JEST OPIS") };
 
 function showDescription(divName, description) {
@@ -72,74 +155,6 @@ function disableDescription(divName) {
 
   elem.className = "slider_element";
 }
+
+// END -> PAGE: UMIEJETNOSCI
 */
-
-// PAGE: PORTFOLIO
-
-function sleep(timeValue) {
-  var x = 0;
-  var pause = setInterval(p, 100);
-  function p() {
-    if(x == (10*timeValue)) {
-      clearInterval(pause);
-    } else {
-      x += 1
-    }
-  }
-}
-
-function x(containerName, elementName, circleName, button1, button2, delay, numberOfElements) {
-  var container = document.getElementById(containerName);
-  var element = container.getElementsByClassName(elementName);
-  var circle = document.getElementsByClassName(circleName);
-  var leftButton = document.getElementById(button1);
-  var rightButton = document.getElementById(button2);
-  
-  var i = 1;
-
-  showAndHideElement(element[0], circle[0], delay);
-  var interval = setInterval(frame, (delay * 1000));
-  function frame() {    
-    showAndHideElement(element[i], circle[i], delay);
-
-    detectClick('rightButton');
-    
-    i += 1;
-    if(i == numberOfElements) {
-      i = 0;
-    }
-  }
-}
-
-// Powoduje pokazanie, a nastepnie ukrycie wskazanego elementu 
-function showAndHideElement(element, circle, duration) {
-  var i = 0;
-
-  var interval = setInterval(frame, (5 * duration));
-  function frame() {
-
-    if(i >= 1) {
-      i = 0;
-      element.style.top = "-200%";
-      clearInterval(interval);
-    } 
-    else if(i <= 0) {
-      element.style.top = "0%";
-    } 
-    else if(i <= 0.1) {
-      element.style.opacity = (i * 10) + 0.05;
-      circle.style.opacity = (i * 5) + 0.55;
-    } 
-    else if(i >= 0.9) {
-      element.style.opacity = (i - 1) * (-10) - 0.05;
-      circle.style.opacity = (i - 1) * (-5) + 0.55; 
-    }
-
-    i += 0.005;
-  }
-}
-
-
-function detectClick(divId) {
-  divId.onclick = function() { divId.style.background = black;};
-}

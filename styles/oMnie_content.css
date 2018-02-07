@@ -3,9 +3,24 @@ p {
     margin: 0 0 1em 0;
 }
 
+p:nth-child(6) {
+    margin: 0 0 2em 0;
+}
+
+p:nth-child(7), p:nth-child(8) {
+    font-size: 0.7em;
+    margin: 0;
+}
+
 .p1 {
     font-size: 1.6em;
-    margin: 2em 0 1em 1em;
+    margin: 1em 0 1em 1em;
+}
+
+.p6 {
+    font-size: 1em;
+    text-align: justify;
+    margin: 4em 0 0 0;
 }
 
 .s2 {
@@ -24,6 +39,23 @@ p {
     background: rgb(170, 231, 255);
 }
 
+#answer {
+    opacity: 0;
+}
+
+#yes, #no, #back {
+    border: 0;
+    background: #fff;
+    cursor: pointer;
+    margin: 0 1em 0 1em;
+    font-family: 'Dosis', sans-serif;    
+}
+
+#back {
+    font-size: 1em;
+    margin: 1em 0 0 0;
+}
+
 
 @media screen and (max-width: 768px) {
     .p1 {
@@ -32,5 +64,11 @@ p {
 
     .p5 {
         margin-bottom: 0;
+    }
+
+    .p6 {
+        font-size: 1em;
+        text-align: justify;
+        margin: 0;
     }
 }

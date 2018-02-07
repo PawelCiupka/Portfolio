@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head lang="pl">
-        <link rel="stylesheet" href="styles/portfolio_content.css">    
+        <link rel="stylesheet" href="styles/portfolio_content.css">          
     </head>
-    <body>
+
+    <body onload=" letsSlide('img_containter', 'a_img', 'circle', 'left_button', 'right_button', 8, 2)">
+       
+        <button id="go" onclick="letsSlide('img_containter', 'a_img', 'circle', 'left_button', 'right_button', 8, 2)">SLIDER GO</button>
+
         <div class="slider">
             <div class="sliderUp">
-                <button id="left_button" onclick="x('img_containter', 'a_img', 'circle', 'left_button', 'right_button', 8, 2)"><</button>
+                <button id="left_button"><</button>
                 <div id="img_containter">
                     <a href="pages/wrsmechaniczny.html" target="_blank" class="a_img"> <img class="page_img" src="photos/WRS_Mechaniczny.png" alt=""> </a>
                     <a href="#" target="_blank" class="a_img"> <img class="page_img" src="photos/profile_photo.png" alt=""> </a>
@@ -22,6 +26,5 @@
             </div>
            
         </div>
-
     </body>
 </html>
