@@ -4,18 +4,25 @@
         <link rel="stylesheet" href="styles/portfolio_content.css">          
     </head>
 
-    <body onload=" letsSlide('img_containter', 'a_img', 'circle', 'left_button', 'right_button', 8, 2)">
+    <body>
        
-        <button id="go" onclick="letsSlide('img_containter', 'a_img', 'circle', 'left_button', 'right_button', 8, 2)">SLIDER GO</button>
+        <!-- <button id="go" onclick="letsSlide('img_containter', 'a_img', 'circle', 'left_button', 'right_button', 8, 2)">SLIDER GO</button> -->
 
-        <div class="slider">
+        <div id="slider">
             <div class="sliderUp">
-                <button id="left_button"><</button>
+                <button id="left_button" onclick="showNextElement('a_img', 'circle', 2, 0.02)"><</button>
                 <div id="img_containter">
-                    <a href="pages/wrsmechaniczny.html" target="_blank" class="a_img"> <img class="page_img" src="photos/WRS_Mechaniczny.png" alt=""> </a>
-                    <a href="#" target="_blank" class="a_img"> <img class="page_img" src="photos/profile_photo.png" alt=""> </a>
+
+                    <div onclick="load_view('content', 'contents/portfolio_pages/mechaniczny.html')" class="a_img"> 
+                        <img class="page_img" src="photos/WRS_Mechaniczny.png" alt="">
+                    </div>
+
+                    <div onclick="load_view('content', 'contents/portfolio_pages/flying_figure.html')" class="a_img">
+                        <img class="page_img" src="photos/profile_photo.png" alt=""> 
+                    </div>
+
                 </div>
-                <button id="right_button">></button>
+                <button id="right_button" onclick="showNextElement('a_img', 'circle', 2, 0.02)">></button>
             </div>
 
             <div class="sliderDown">
@@ -26,5 +33,6 @@
             </div>
            
         </div>
+
     </body>
 </html>

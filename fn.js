@@ -7,8 +7,6 @@ document.getElementById("menu-elem-skontaktuj").onclick = function() { load_view
 document.getElementById("hamburger").onclick = function () { openMenu() };
 document.getElementById("photo").onclick = function() { location.reload() };
 
-//document.body.onload = function() { letsSlide('img_containter', 'a_img', 'circle', 'left_button', 'right_button', 8, 2) };
-
 // Powoduje otworzenie menu na mobile
 function openMenu() {
   var menuList = document.getElementById("mobile-ul");
@@ -76,7 +74,7 @@ function changeText(text) {
 
 
 // START -> PAGE: PORTFOLIO
-// Funkcja zarządzająca sliderem
+// Funkcja zarządzająca sliderem -> nie użyta
 function letsSlide(containerName, elementName, circleName, button1, button2, delay, numberOfElements) {
   var container = document.getElementById(containerName);
   var element = document.getElementsByClassName(elementName);
@@ -128,6 +126,41 @@ function letsSlide(containerName, elementName, circleName, button1, button2, del
       circle[i].style.opacity = (x - 1) * (-5) + 0.55; 
     }
     x += 0.005;
+  }
+}
+
+// Powoduje pokazanie kolejnego/poprzedniego elementu slidera
+iElem = 0;
+zElem = 1;
+function showNextElement(elementName, circleName, numberOfElements, diff) {
+  var element = document.getElementsByClassName(elementName);
+  var circle = document.getElementsByClassName(circleName);
+
+  var i1 = 0;
+
+  circle[iElem].style.opacity = 0.5;
+  element[iElem].style.opacity = 0;
+  
+  zElem += 1;
+  iElem += 1;
+  if(iElem < 0) {
+    iElem = numberOfElements-1;
+  } else if (iElem > numberOfElements-1) {
+    iElem = 0;
+  }
+  
+  var interval = setInterval(frame, 5);
+  function frame() {
+    if(i1 > 1) {
+      clearInterval(interval);
+    } else {
+      element[iElem].style.opacity = i1;
+      element[iElem].style.zIndex = zElem;
+
+      
+      circle[iElem].style.opacity = 0.5 + (i1*0.5);
+      i1 += diff;
+    } 
   }
 }
 // END -> PAGE: PORTFOLIO
