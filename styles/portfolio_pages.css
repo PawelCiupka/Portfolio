@@ -1,9 +1,32 @@
-#back {
-    border: 0;
-    background: #fff;
-    cursor: pointer;
-    margin: 0 1em 0 1em;
-    font-family: 'Dosis', sans-serif;    
-    font-size: 1em;
-    margin: 1em 0 0 0;
+#content {
+    font-size: 1.2em;
+}
+
+p {
+    margin: 0;
+}
+
+.pageDescribe {
+    margin: 1.5em 0 1em 0;
+    text-align: justify;
+}
+
+.learnedList {
+    margin: 0 0 1em 0;
+}
+
+.learnedList li {
+    margin: 0 0 0 1em;
+}
+
+.pageLink {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+@media screen and (max-width: 768px) {
+    .pageDescribe {
+        margin: 0 0 1em 0;
+    }
 }

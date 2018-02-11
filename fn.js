@@ -132,7 +132,7 @@ function letsSlide(containerName, elementName, circleName, button1, button2, del
 // Powoduje pokazanie kolejnego/poprzedniego elementu slidera
 iElem = 0;
 zElem = 1;
-function showNextElement(elementName, circleName, numberOfElements, diff) {
+function showNextElement(elementName, circleName, numberOfElements, diff, direction) {
   var element = document.getElementsByClassName(elementName);
   var circle = document.getElementsByClassName(circleName);
 
@@ -142,7 +142,7 @@ function showNextElement(elementName, circleName, numberOfElements, diff) {
   element[iElem].style.opacity = 0;
   
   zElem += 1;
-  iElem += 1;
+  iElem += (direction * 1);
   if(iElem < 0) {
     iElem = numberOfElements-1;
   } else if (iElem > numberOfElements-1) {

@@ -132,6 +132,21 @@ menu#desktop-menu ul#desktop-ul li.desktop-li:hover {
 	font-family: 'Dosis', sans-serif;
 }
 
+#back {
+    border: 0;
+    background: #fff;
+    cursor: pointer;
+    font-family: 'Dosis', sans-serif;    
+    font-size: 1em;
+	margin: 1em 0 0 0;
+	color: #3180fd;
+	transition-duration: 0.2s;
+}
+
+#back:hover {
+	color: #5896fc;
+}
+
 footer {
 	grid-row: 5 / 6;
 	grid-column: 2 / 3;

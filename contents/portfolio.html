@@ -6,11 +6,9 @@
 
     <body>
        
-        <!-- <button id="go" onclick="letsSlide('img_containter', 'a_img', 'circle', 'left_button', 'right_button', 8, 2)">SLIDER GO</button> -->
-
         <div id="slider">
             <div class="sliderUp">
-                <button id="left_button" onclick="showNextElement('a_img', 'circle', 2, 0.02)"><</button>
+                <button id="left_button" onclick="showNextElement('a_img', 'circle', 3, 0.02, -1)"><</button>
                 <div id="img_containter">
 
                     <div onclick="load_view('content', 'contents/portfolio_pages/mechaniczny.html')" class="a_img"> 
@@ -18,15 +16,20 @@
                     </div>
 
                     <div onclick="load_view('content', 'contents/portfolio_pages/flying_figure.html')" class="a_img">
-                        <img class="page_img" src="photos/profile_photo.png" alt=""> 
+                        <img class="page_img" src="photos/flying_figure.png" alt=""> 
+                    </div>
+
+                    <div onclick="load_view('content', 'contents/portfolio_pages/portfolioPage.html')" class="a_img">
+                        <img class="page_img" src="photos/Portfolio.png" alt=""> 
                     </div>
 
                 </div>
-                <button id="right_button" onclick="showNextElement('a_img', 'circle', 2, 0.02)">></button>
+                <button id="right_button" onclick="showNextElement('a_img', 'circle', 3, 0.02, 1)">></button>
             </div>
 
             <div class="sliderDown">
                 <div id="choice_belt">
+                    <div class="circle"></div>
                     <div class="circle"></div>
                     <div class="circle"></div>
                 </div>
