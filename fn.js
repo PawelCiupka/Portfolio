@@ -56,6 +56,27 @@ function load_view(divName, fileName) {
   };
   xhttp.open("GET", fileName, true);
   xhttp.send();
+  fancyChange(divName);
+}
+
+// Odpowiada za gładkie przejścia podczas load_view
+function fancyChange(divName) {
+  var element = document.getElementById(divName);
+  var interval = setInterval(frame, 1);
+
+  var i = 0;
+  element.style.opacity = "0";
+
+  function frame() {
+    if(i >= 1) {
+      clearInterval(interval);
+    }
+    else {
+      element.style.opacity = i;
+      i += 0.01;
+    }
+  }
+
 }
 
 
