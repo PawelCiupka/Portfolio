@@ -132,6 +132,12 @@ menu#desktop-menu ul#desktop-ul li.desktop-li:hover {
 	font-family: 'Dosis', sans-serif;
 }
 
+@media screen and (max-width: 1320px) and (min-width: 769px) {
+	#content {
+		font-size: 0.90em;
+	}
+}
+
 #back {
     border: 0;
     background: #fff;
