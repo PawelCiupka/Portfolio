@@ -1,9 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head lang="pl">
-        <link rel="stylesheet" href="styles/kontakt_content.css">    
-    </head>
-    <body>
-        NAPISZ: pawelciupka@gmail.com
-    </body>
+
+<head lang="pl">
+	<link rel="stylesheet" href="styles/kontakt_content.css">
+</head>
+
+<body>
+	<div class="mailForm">
+		<form name="send_mail" action="php/sendMail.php" method="POST" onsubmit="return validateForm()">
+
+			<p>Imię i nazwisko:</p>
+			<p>Numer telefonu:</p>
+			<p>E-mail:</p>
+			<p>Temat:</p>
+			<p>Treść wiadomości:</p>	
+
+
+			<input class="input" type="text" name="name" placeholder="Imię i nazwisko">
+			<input class="input" type="text" name="number" placeholder="Numer telefonu">
+			<input class="input" type="email" name="mail" placeholder="E-mail">			
+			<textarea class="input" type="text" rows="2" name="topic" placeholder="Temat"></textarea>
+			<textarea class="input" type="text" rows="10" name="message" placeholder="Wiadomość"></textarea>
+
+
+			<!-- <div class="g-recaptcha" data-sitekey="6Ld4JkYUAAAAANTZRJIdbRHfUtNea2d9qWvLKPSA"></div> -->
+
+			<input class="submit" value="Wyślij" type="submit">
+
+			<span>Pamiętaj by wprowadzić prawidłowe dane! :)</span>
+
+		</form>
+
+	</div>
+
+
+</body>
+
 </html>
