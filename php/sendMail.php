@@ -50,9 +50,9 @@ $message = '
 </body>
 </html>';
 
-echo $message;
-//mail($to, $them, $message, $headers);
+//echo $message;
+mail($to, $them, $message, $headers);
 
-//header('location: ../index.html');
+header('location: ../index.html');
 
 ?>

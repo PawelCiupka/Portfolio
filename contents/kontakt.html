@@ -9,25 +9,34 @@
 	<div class="mailForm">
 		<form name="send_mail" action="php/sendMail.php" method="POST" onsubmit="return validateForm()">
 
-			<p>Imię i nazwisko:</p>
-			<p>Numer telefonu:</p>
-			<p>E-mail:</p>
-			<p>Temat:</p>
-			<p>Treść wiadomości:</p>	
+			<div class="element">
+				<i class="fas fa-user"></i>
+				<input class="input" type="text" name="name" placeholder="Imię i nazwisko">
+			</div>
 
+			<div class="element">
+				<i class="fas fa-phone"></i>
+				<input class="input" type="text" name="number" placeholder="Numer telefonu">
+			</div>
 
-			<input class="input" type="text" name="name" placeholder="Imię i nazwisko">
-			<input class="input" type="text" name="number" placeholder="Numer telefonu">
-			<input class="input" type="email" name="mail" placeholder="E-mail">			
-			<textarea class="input" type="text" rows="2" name="topic" placeholder="Temat"></textarea>
-			<textarea class="input" type="text" rows="10" name="message" placeholder="Wiadomość"></textarea>
+			<div class="element">
+				<i class="fas fa-envelope"></i>				
+				<input class="input" type="email" name="mail" placeholder="E-mail">	
+			</div>
 
+			<div class="element">
+				<i class="fas fa-pencil-alt"></i>
+				<textarea class="input" type="text" rows="2" name="topic" placeholder="Temat"></textarea>
+			</div>
 
-			<!-- <div class="g-recaptcha" data-sitekey="6Ld4JkYUAAAAANTZRJIdbRHfUtNea2d9qWvLKPSA"></div> -->
-
+			<div class="element">
+				<i class="fas fa-comment"></i>
+				<textarea class="input" type="text" rows="8" name="message" placeholder="Wiadomość"></textarea>
+			</div>
+			
 			<input class="submit" value="Wyślij" type="submit">
 
-			<span>Pamiętaj by wprowadzić prawidłowe dane! :)</span>
+			<span>Pamiętaj by wprowadzić prawidłowe dane! :)</span> 
 
 		</form>
 

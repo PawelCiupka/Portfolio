@@ -10,81 +10,37 @@ form {
     width: 70%;
     height: 80%;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 1fr 0.2fr 0.2fr;
     grid-row-gap: 0.5em;
     text-align: center;
 }
 
-input, textarea {
+.element {
     background: #fff;
     border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    border-radius: 2%;
+    opacity: 0.7;
+    max-height: 8em;
 }
 
-p {
-    color: #3180fd;
-}
-
-
-form p:nth-child(1) {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-form p:nth-child(2) {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
-
-form p:nth-child(3) {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-}
-
-form p:nth-child(4) {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
-}
-
-form p:nth-child(5) {
-    grid-column: 1 / 2;
-    grid-row: 5 / 6;
-}
-
-form input:nth-child(1) {
-    grid-column: 2 / -1;
-    grid-row: 1 / 2;
-}
-
-form input:nth-child(2) {
-    grid-column: 2 / -1;
-    grid-row: 2 / 3;
-}
-
-form input:nth-child(3) {
-    grid-column: 2 / -1;
-    grid-row: 3 / 4;
-}
-
-form textarea:nth-child(1) {
-    width: auto;
-    height: 1em;
-    grid-column: 2 / -1;
-    grid-row: 4 / 5;
-}
-
-form textarea:nth-child(2) {
-    grid-column: 2 / -1;
-    grid-row: 5 / 6;
+.input {
+    width: 90%;
+    height: 100%;
+    border: 0;
+    padding:  0 0 0 1.5em;
+    font-family: 'Dosis', sans-serif;
 }
 
 form .submit {
     justify-self: center;
     padding: 0.5em 1em;
-    grid-column: 1 / -1;
-    grid-row: 6 / 7;
     color: #3180fd;
     cursor: pointer;
+    font-family: 'Dosis', sans-serif;
 }
 
 form span {
@@ -99,81 +55,19 @@ form span {
     }
 
     form {
+        width: 90%;
         height: auto;
-        grid-template-columns: 100%;
-        grid-template-rows: 0.1fr 0.2fr 0.1fr 0.2fr 0.1fr 0.2fr 0.1fr 0.4fr 0.1fr 1fr 0.2fr 0.2fr 0.1fr 0.1fr;
     }
 
-    input, textarea {
+    .input {
         width: 100%;
         justify-self: center;
         margin: 0 0 0.5em 0;
     }
 
-    form p:nth-child(1) {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
-
-    form input:nth-child(1) {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    }
-    
-    form p:nth-child(2) {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
-    }
-
-    form input:nth-child(2) {
-        grid-column: 1 / 2;
-        grid-row: 4 / 5;
-    }
-    
-    form p:nth-child(3) {
-        grid-column: 1 / 2;
-        grid-row: 5 / 6;
-    }
-    
-    form input:nth-child(3) {
-        grid-column: 1 / 2;
-        grid-row: 6 / 7;
-    }
-
-    form p:nth-child(4) {
-        grid-column: 1 / 2;
-        grid-row: 7 / 8;
-    }
-
-    form input:nth-child(4) {
-        grid-column: 1 / 2;
-        grid-row: 8 / 9;
-    }
-    form textarea:nth-child(1) {
-        grid-column: 1 / 2;
-        grid-row: 9 / 10;
-    }
-    
-    form p:nth-child(5) {
-        grid-column: 1 / 2;
-        grid-row: 9 / 10;
-    }
-
-    form textarea:nth-child(2) {
-        grid-column: 1 / 2;
-        grid-row: 10 / 11;
-    }
-
     form .submit {
-        max-width: 30vw;
-        grid-column: 1 / 2;
-        grid-row: 11 / 12;
+        max-width: 30vw;        
         margin: 1em 0 0 0;
-    }
-    
-    form span {
-        grid-column: 1 / 2;
-        grid-row: 12 / 13;
     }
     
 }
