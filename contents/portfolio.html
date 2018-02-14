@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head lang="pl">
-        <link rel="stylesheet" href="styles/portfolio_content.css">          
-    </head>
 
-    <body>
-       
-        <div id="slider">
-            <div class="sliderUp">
-                <button id="left_button" onclick="showNextElement('a_img', 'circle', 3, 0.02, -1)"><</button>
-                <div id="img_containter">
+<head lang="pl">
+    <link rel="stylesheet" href="styles/portfolio_content.css">
+</head>
 
-                    <div onclick="load_view('content', 'contents/portfolio_pages/mechaniczny.html')" class="a_img"> 
-                        <img class="page_img" src="photos/WRS_Mechaniczny.png" alt="">
+<body>
+    <div id="slider">
+        <div class="sliderUp">
+            <button id="left_button" onclick="showNextElement('a_img', 'circle', 3, 0.02, -1)">
+                <</button>
+                    <div id="img_containter">
+
+                        <div onclick="load_view('content', 'contents/portfolio_pages/mechaniczny.html')" class="a_img">
+                            <img class="page_img" src="photos/WRS_Mechaniczny.png" alt="">
+                        </div>
+
+                        <div onclick="load_view('content', 'contents/portfolio_pages/flying_figure.html')" class="a_img">
+                            <img class="page_img" src="photos/flying_figure.png" alt="">
+                        </div>
+
+                        <div onclick="load_view('content', 'contents/portfolio_pages/portfolioPage.html')" class="a_img">
+                            <img class="page_img" src="photos/Portfolio.png" alt="">
+                        </div>
+
                     </div>
-
-                    <div onclick="load_view('content', 'contents/portfolio_pages/flying_figure.html')" class="a_img">
-                        <img class="page_img" src="photos/flying_figure.png" alt=""> 
-                    </div>
-
-                    <div onclick="load_view('content', 'contents/portfolio_pages/portfolioPage.html')" class="a_img">
-                        <img class="page_img" src="photos/Portfolio.png" alt=""> 
-                    </div>
-
-                </div>
-                <button id="right_button" onclick="showNextElement('a_img', 'circle', 3, 0.02, 1)">></button>
-            </div>
-
-            <div class="sliderDown">
-                <div id="choice_belt">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                </div>
-            </div>
-           
+                    <button id="right_button" onclick="showNextElement('a_img', 'circle', 3, 0.02, 1)">></button>
         </div>
 
-    </body>
+        <div class="sliderDown">
+            <div id="choice_belt">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>

@@ -1,138 +1,129 @@
 <!DOCTYPE html>
 <html lang="pl">
-	<head>
-		<title>Portfolio Paweł Ciupka</title>
-		<meta charset="utf-8">
-		<link rel="Shortcut icon" href="photos/logo.png" />
-		<link rel="stylesheet" href="styles/index_style.css">
-		<link rel="stylesheet" href="styles/main_content.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	</head>
-	<body>
 
-		<div id="container" class="container">
-			<header id="header">
-				<div id="hamburger" class="hamburger1" tabindex="1"></div>
-			</header>
-		
-			<div class="profile-photo">
-				<img id="photo" src="photos/profile_photo.png" alt="">
-			</div>
-				
-			<div class="information">
-				<h1>Paweł Ciupka</h1>
-				<h2 class="worksite">Student & Freelancer</h2>
-			</div>
-			<div class="hire">
-				<button id="menu-elem-skontaktuj">Skontaktuj się</button>
-			</div>
-			
-			<!-- Desktop menu -->
-			<menu id="desktop-menu">
-				<ul id="desktop-ul">
-					<li id="menu-elem-oMnie" class ="desktop-li">O mnie</li>
-					<li id="menu-elem-umiejestnosci" class ="desktop-li">Umiejętności</li>
-					<li id="menu-elem-oferta" class ="desktop-li">Oferta</li>
-					<li id="menu-elem-portfolio" class ="desktop-li">Portfolio</li>
-				</ul>
-			</menu>
+<head>
+	<title>Portfolio Paweł Ciupka</title>
+	<meta charset="utf-8">
+	<link rel="Shortcut icon" href="photos/logo.png" />
+	<link rel="stylesheet" href="styles/index_style.css">
+	<link rel="stylesheet" href="styles/main_content.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
 
-			<!-- Mobile menu -->
-				<ul id="mobile-ul" class="mobile-menu">
-					<li id="menu-elem-oMnie" 			class ="mobile-li" onclick="load_view('content', 'contents/oMnie.html')">O mnie</li>
-					<li id="menu-elem-umiejestnosci" 	class ="mobile-li" onclick="load_view('content', 'contents/umiejetnosci.html')">Umiejętności</li>
-					<li id="menu-elem-oferta" 			class ="mobile-li" onclick="load_view('content', 'contents/oferta.html')">Oferta</li>
-					<li id="menu-elem" 					class ="mobile-li" onclick="load_view('content', 'contents/portfolio.html')">Portfolio</li>
-					<li id="menu-elem-skontaktuj"		class ="mobile-li" onclick="load_view('content', 'contents/kontakt.html')">Skontaktuj się</li>
-				</ul>
-			
-			<div class="right-section">
-				<div id="content">
+<body>
+	<div id="container" class="container">
+		<header id="header">
+			<div id="hamburger" class="hamburger1" tabindex="1"></div>
+		</header>
 
-					<div class="mainHeader">
-						
-
-						<div class="pageWWW">
-
-							<div class="adjective">
-									<div class="napis">
-									<div class="letter1">N</div>
-									<div class="letter1">O</div>
-									<div class="letter1">W</div>
-									<div class="letter1">O</div>
-									<div class="letter1">C</div>
-									<div class="letter1">Z</div>
-									<div class="letter1">E</div>
-									<div class="letter1">S</div>
-									<div class="letter1">N</div>
-									<div class="letter1">E</div>		
-								</div>	 
-	
-								<div class="napis">
-									<div class="letter2">P</div>
-									<div class="letter2">R</div>
-									<div class="letter2">Z</div>
-									<div class="letter2">E</div>
-									<div class="letter2">J</div>
-									<div class="letter2">R</div>
-									<div class="letter2">Z</div>
-									<div class="letter2">Y</div>
-									<div class="letter2">S</div>
-									<div class="letter2">T</div>
-									<div class="letter2">E</div>
-								</div>	
-								
-								<div class="napis">
-									<div class="letter3">F</div>
-									<div class="letter3">U</div>
-									<div class="letter3">N</div>
-									<div class="letter3">K</div>
-									<div class="letter3">C</div>
-									<div class="letter3">J</div>
-									<div class="letter3">O</div>
-									<div class="letter3">N</div>
-									<div class="letter3">A</div>
-									<div class="letter3">L</div>
-									<div class="letter3">N</div>								
-									<div class="letter3">E</div>
-								</div>
-
-								<div class="napis">
-									<div class="letter4">P</div>
-									<div class="letter4">R</div>
-									<div class="letter4">O</div>
-									<div class="letter4">F</div>
-									<div class="letter4">E</div>
-									<div class="letter4">S</div>
-									<div class="letter4">J</div>
-									<div class="letter4">O</div>
-									<div class="letter4">N</div>
-									<div class="letter4">A</div>
-									<div class="letter4">L</div>
-									<div class="letter4">N</div>								
-									<div class="letter4">E</div>
-								</div>	
-
-							<p>STRONY&nbspINTERNETOWE</p>	
-						
-						</div>
-
-					</div>
-			
-				</div>
-			</div>
-
+		<div class="profile-photo">
+			<img id="photo" src="photos/profile_photo.png" alt="">
 		</div>
 
+		<div class="information">
+			<h1>Paweł Ciupka</h1>
+			<h2 class="worksite">Student & Freelancer</h2>
+		</div>
+
+		<div class="hire">
+			<button id="menu-elem-contact">Skontaktuj się</button>
+		</div>
+
+		<!-- Desktop menu -->
+		<menu id="desktop-menu">
+			<ul id="desktop-ul">
+				<li id="menu-elem-about" class="desktop-li">O mnie</li>
+				<li id="menu-elem-skills" class="desktop-li">Umiejętności</li>
+				<li id="menu-elem-offer" class="desktop-li">Oferta</li>
+				<li id="menu-elem-portfolio" class="desktop-li">Portfolio</li>
+			</ul>
+		</menu>
+
+		<!-- Mobile menu -->
+		<ul id="mobile-ul" class="mobile-menu">
+			<li id="menu-elem-about" class="mobile-li" onclick="load_view_mobile('content', 'contents/about.html')">O mnie</li>
+			<li id="menu-elem-skills" class="mobile-li" onclick="load_view_mobile('content', 'contents/skills.html')">Umiejętności</li>
+			<li id="menu-elem-offer" class="mobile-li" onclick="load_view_mobile('content', 'contents/offer.html')">Oferta</li>
+			<li id="menu-elem-portfolio" class="mobile-li" onclick="load_view_mobile('content', 'contents/portfolio.html')">Portfolio</li>
+			<li id="menu-elem-contact" class="mobile-li" onclick="load_view_mobile('content', 'contents/contact.html')">Skontaktuj się</li>
+		</ul>
+
+		<div class="right-section">
+			<div id="content">
+				<div class="mainHeader">
+					<div class="pageWWW">
+						<div class="adjective">
+							<div class="word">
+								<div class="letter1">N</div>
+								<div class="letter1">O</div>
+								<div class="letter1">W</div>
+								<div class="letter1">O</div>
+								<div class="letter1">C</div>
+								<div class="letter1">Z</div>
+								<div class="letter1">E</div>
+								<div class="letter1">S</div>
+								<div class="letter1">N</div>
+								<div class="letter1">E</div>
+							</div>
+
+							<div class="word">
+								<div class="letter2">P</div>
+								<div class="letter2">R</div>
+								<div class="letter2">Z</div>
+								<div class="letter2">E</div>
+								<div class="letter2">J</div>
+								<div class="letter2">R</div>
+								<div class="letter2">Z</div>
+								<div class="letter2">Y</div>
+								<div class="letter2">S</div>
+								<div class="letter2">T</div>
+								<div class="letter2">E</div>
+							</div>
+
+							<div class="word">
+								<div class="letter3">F</div>
+								<div class="letter3">U</div>
+								<div class="letter3">N</div>
+								<div class="letter3">K</div>
+								<div class="letter3">C</div>
+								<div class="letter3">J</div>
+								<div class="letter3">O</div>
+								<div class="letter3">N</div>
+								<div class="letter3">A</div>
+								<div class="letter3">L</div>
+								<div class="letter3">N</div>
+								<div class="letter3">E</div>
+							</div>
+
+							<div class="word">
+								<div class="letter4">P</div>
+								<div class="letter4">R</div>
+								<div class="letter4">O</div>
+								<div class="letter4">F</div>
+								<div class="letter4">E</div>
+								<div class="letter4">S</div>
+								<div class="letter4">J</div>
+								<div class="letter4">O</div>
+								<div class="letter4">N</div>
+								<div class="letter4">A</div>
+								<div class="letter4">L</div>
+								<div class="letter4">N</div>
+								<div class="letter4">E</div>
+							</div>
+							<p>STRONY&nbspINTERNETOWE</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<footer>
 			&copy Paweł Ciupka 2018
 		</footer>
+	</div>
 
-		</div>
+	<script src="scripts/script.js"></script>
+</body>
 
-
-		<script src="fn.js"></script>
-	</body>
 </html>

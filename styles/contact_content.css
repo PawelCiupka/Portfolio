@@ -11,7 +11,7 @@ form {
     height: 80%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 1fr 0.2fr 0.2fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 1fr 0.2fr;
     grid-row-gap: 0.5em;
     text-align: center;
 }
@@ -59,6 +59,10 @@ form span {
         height: auto;
     }
 
+    .element {
+        opacity: 0.8;
+    }
+
     .input {
         width: 100%;
         justify-self: center;
@@ -68,6 +72,9 @@ form span {
     form .submit {
         max-width: 30vw;        
         margin: 1em 0 0 0;
+        padding: 0.5em;
+        background: #fff;
+        border: 1px #000 solid;
     }
     
 }

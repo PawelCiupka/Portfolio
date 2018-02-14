@@ -1,5 +1,4 @@
 <?php
-
 $name = $_POST["name"];
 $number = $_POST["number"];
 $mail = $_POST["mail"];
@@ -50,9 +49,6 @@ $message = '
 </body>
 </html>';
 
-//echo $message;
 mail($to, $them, $message, $headers);
-
 header('location: ../index.html');
-
 ?>
