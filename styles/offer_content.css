@@ -5,7 +5,7 @@
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: justify;
 }
 
@@ -24,7 +24,7 @@ p {
 
 .offer_element {
     background: #eee;
-    width: 40%;
+    width: 30%;
     height: 8em;
     margin: 0.3em;
     align-items: flex-start;
@@ -44,7 +44,7 @@ p {
     justify-content: center;
 }
 
-h3 {
+h4 {
     height: 40%;
     font-size: 1.2em;
     color: #999;
@@ -57,7 +57,7 @@ h3 {
     opacity: 0;
     display: flex;
     align-items: center;
-    font-size: 1em;
+    font-size: 0.8em;
     text-align: center;
     cursor: default;
     margin: 0 5% 0 5%;

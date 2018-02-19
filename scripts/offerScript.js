@@ -1,7 +1,7 @@
 function showDescription(divName) {
   var container = document.getElementById(divName);
   var icon = container.getElementsByClassName('icon');
-  var title = container.getElementsByTagName('h3');
+  var title = container.getElementsByTagName('h4');
   var description = container.getElementsByClassName('description');
   var i = 0;  
 
@@ -28,7 +28,7 @@ function showDescription(divName) {
 function hideDescription(divName) {
   var container = document.getElementById(divName);
   var icon = container.getElementsByClassName('icon');
-  var title = container.getElementsByTagName('h3');
+  var title = container.getElementsByTagName('h4');
   var description = container.getElementsByClassName('description');
   var i = 0;  
 
