@@ -7,12 +7,12 @@ function showDescription(divName) {
 
   var interval = setInterval(frame, 5);
   function frame() {
-    if(i >= 1.04) {
+    if(i >= 1) {
       clearInterval(interval);
     } else if(i < 0.5) {
       icon[0].style.opacity = 1-(2*i);
       title[0].style.opacity = 1-(2*i);
-    } else if(i > 0.5 && i <= 1.02) {
+    } else if(i > 0.5 && i <= 1) {
       description[0].style.visibility = "visible";
       description[0].style.height = "90%";
       icon[0].style.visibility = "hidden";
@@ -49,5 +49,11 @@ function hideDescription(divName) {
       title[0].style.opacity = (2*i)-1;
     }    
     i+=0.02;
+  }
+}
+
+function showDescribeOnMobile(divName) {
+  if(screen.width < 768) {
+    showDescription(divName);
   }
 }

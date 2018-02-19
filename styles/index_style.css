@@ -104,7 +104,7 @@ menu#desktop-menu ul#desktop-ul {
 menu#desktop-menu ul#desktop-ul li.desktop-li {
 	display: block;
 	
-	font-size: 0.8em;
+	font-size: 0.9em;
 	padding: 5px 20px 5px 20px;
 	margin: 10px;
 	border: 1px solid #000;
@@ -279,7 +279,7 @@ footer {
 		padding: 0 0 0 10%;
 		background-color: #fff;
 		list-style-type: none;
-		height: 3em;
+		height: 3.75em;
 		width: 100%;
 		z-index: 1;
 	}
@@ -367,7 +367,7 @@ footer {
 		}
 
 		.mobile-menu li {
-			height: 3.5em;
+			height: 4.375em;
 		}
 
 		@media screen and (max-height: 370px) {

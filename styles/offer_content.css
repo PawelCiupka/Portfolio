@@ -59,6 +59,7 @@ h4 {
     align-items: center;
     font-size: 0.8em;
     text-align: center;
+    justify-content: center;
     cursor: default;
     margin: 0 5% 0 5%;
     visibility: hidden;

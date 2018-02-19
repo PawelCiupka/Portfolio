@@ -2,10 +2,6 @@ document.getElementById('menu-elem-about').addEventListener('click', function ()
   load_view('content', 'contents/about.html');
 });
 
-document.getElementById('menu-elem-skills').addEventListener('click', function () {
-  load_view('content', 'contents/skills.html');
-});
-
 document.getElementById('menu-elem-offer').addEventListener('click', function () {
   load_view('content', 'contents/offer.html');
 });
