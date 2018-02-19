@@ -11,4 +11,5 @@ window.onload = function () {
     includeJS('scripts/aboutScript.js');
     includeJS('scripts/portfolioScript.js');
     includeJS('scripts/contactScript.js');
+    includeJS('scripts/offerScript.js');
 }
