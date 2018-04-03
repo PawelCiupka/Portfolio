@@ -1,3 +1,7 @@
+document.getElementById('no').addEventListener('click', function () {
+  changeText('Nie to nie! :(')
+});
+
 function changeText(text) {
   var button1 = document.getElementById('yes');
   var button2 = document.getElementById('no');

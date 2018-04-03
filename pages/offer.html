@@ -1,69 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 
-<head lang="pl">
-    <link rel="stylesheet" href="styles/offer_content.css">
+<head>
+    <title>Portfolio - Oferta | Paweł Ciupka | Front-end Developer & Freelancer</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Cześć! Nazywam się Paweł Ciupka, a to moje portfolio. Jestem studentem informatyki, freelancerem i front-end web developerem. Moją pasją jest tworzenie stron WWW. Wpadnij i sam się o tym przekonaj!">
+
+    <link rel="Shortcut icon" href="../photos/logo.png" />
+    <link rel="stylesheet" href="../styles/index_style.css">
+    <link rel="stylesheet" href="../styles/offer_content.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <p>
-        Trafiłeś tu pewnie nie przez przypadek. Niech zgadnę. Potrzebujesz strony internetowej, ale nie masz na nią pomysłu? A może
-        chcesz przenieść swoją wizję z "papieru" na ekran? Dobrze trafiłeś! Zapewniam realizację wszystkich Twoich oczekiwań.
-    </p>
-    <p>
-        Podejmując współpracę ze mną, gwarantuję dostarczyć:
-    </p>
+    <div id="container" class="container">
+        <header id="header">
+            <div id="hamburger" class="hamburger1" tabindex="1"></div>
+        </header>
 
-    <div class="offer_container">
-        <div class="offer_element" id="e1" onmouseenter="showDescription('e1')" onmouseleave="hideDescription('e1')" onclick="showDescribeOnMobile('e1')">
-            <div class="icon">
-                <i class="fas fa-server"></i>
-            </div>
-            <h4>Hosting i domena</h4>
-            <div class="description">Pomoc w wybraniu odpowiedniego hostingu oraz domeny.</div>
+        <div class="profile-photo">
+            <img id="photo" src="../photos/profile_photo.png" alt="Profile Picture">
         </div>
 
-        <div class="offer_element" id="e2" onmouseenter="showDescription('e2')" onmouseleave="hideDescription('e2')" onclick="showDescribeOnMobile('e2')">
-            <div class="icon">
-                <i class="fas fa-file"></i>
-            </div>
-            <h4>PSD to HTML</h4>
-            <div class="description">Przeniesienie projektu graficznego do w pełni funkcjonalnej strony WWW.</div>
+        <div class="information">
+            <h1>Paweł Ciupka</h1>
+            <h2 class="worksite">Student & Freelancer</h2>
         </div>
 
-        <div class="offer_element" id="e3" onmouseenter="showDescription('e3')" onmouseleave="hideDescription('e3')" onclick="showDescribeOnMobile('e3')">
-            <div class="icon">
-                <i class="fas fa-code"></i>
-            </div>
-            <h4>Zakodowanie strony</h4>
-            <div class="description">Napisanie strony od zera zgodnie ze wszystkimi wytycznymi.</div>
+        <div class="hire">
+            <a href="contact.html">Skontaktuj się</a>
         </div>
 
-        <div class="offer_element" id="e4" onmouseenter="showDescription('e4')" onmouseleave="hideDescription('e4')" onclick="showDescribeOnMobile('e4')">
-            <div class="icon">
-                <i class="material-icons">devices_other</i>
-            </div>
-            <h4>Responsywny design</h4>
-            <div class="description">Świetnie wyglądające strony na wszystkich urządzeniach.</div>
-        </div>
+        <!-- Desktop menu -->
+        <menu id="desktop-menu">
+            <ul id="desktop-ul">
+                <li class="desktop-li">
+                    <a href="about.html">O mnie</a>
+                </li>
+                <li class="desktop-li">
+                    <a href="offer.html">Oferta</a>
+                </li>
+                <li class="desktop-li">
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+            </ul>
+        </menu>
 
-        <div class="offer_element" id="e5" onmouseenter="showDescription('e5')" onmouseleave="hideDescription('e5')" onclick="showDescribeOnMobile('e5')">
-            <div class="icon">
-                <i class="material-icons">refresh</i>
-            </div>
-            <h4>Aktualizacje stron</h4>
-            <div class="description">Aktualizacja wyglądu i zawartości strony, dodanie nowych funkcjonalności lub przeniesienie strony na inny hosting.</div>
-        </div>
+        <!-- Mobile menu -->
+        <ul id="mobile-ul" class="mobile-menu">
+            <li class="mobile-li">
+                <a href="about.html">O mnie</a>
+            </li>
+            <li class="mobile-li">
+                <a href="offer.html">Oferta</a>
+            </li>
+            <li class="mobile-li">
+                <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-li">
+                <a href="contact.html">Skontaktuj się</a>
+            </li>
+        </ul>
 
-        <div class="offer_element" id="e6" onmouseenter="showDescription('e6')" onmouseleave="hideDescription('e6')" onclick="showDescribeOnMobile('e6')">
-            <div class="icon">
-                <i class="fas fa-phone"></i>
+        <div class="right-section">
+            <div id="content">
+
+                <p>
+                    Trafiłeś tu pewnie nie przez przypadek. Niech zgadnę. Potrzebujesz strony internetowej, ale nie masz na nią pomysłu? A może
+                    chcesz przenieść swoją wizję z "papieru" na ekran? Dobrze trafiłeś! Zapewniam realizację wszystkich Twoich
+                    oczekiwań.
+                </p>
+                <p>
+                    Podejmując współpracę ze mną, gwarantuję dostarczyć:
+                </p>
+
+                <div class="offer_container">
+                    <div class="offer_element" id="e1">
+                        <div class="icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h4>Hosting i domena</h4>
+                        <div class="description">Pomoc w wybraniu odpowiedniego hostingu oraz domeny.</div>
+                    </div>
+
+                    <div class="offer_element" id="e2">
+                        <div class="icon">
+                            <i class="fas fa-file"></i>
+                        </div>
+                        <h4>PSD to HTML</h4>
+                        <div class="description">Przeniesienie projektu graficznego do w pełni funkcjonalnej strony WWW.</div>
+                    </div>
+
+                    <div class="offer_element" id="e3">
+                        <div class="icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Zakodowanie strony</h4>
+                        <div class="description">Napisanie strony od zera zgodnie ze wszystkimi wytycznymi.</div>
+                    </div>
+
+                    <div class="offer_element" id="e4">
+                        <div class="icon">
+                            <i class="material-icons">devices_other</i>
+                        </div>
+                        <h4>Responsywny design</h4>
+                        <div class="description">Świetnie wyglądające strony na wszystkich urządzeniach.</div>
+                    </div>
+
+                    <div class="offer_element" id="e5">
+                        <div class="icon">
+                            <i class="material-icons">refresh</i>
+                        </div>
+                        <h4>Aktualizacje stron</h4>
+                        <div class="description">Aktualizacja wyglądu i zawartości strony, dodanie nowych funkcjonalności lub przeniesienie strony
+                            na inny hosting.</div>
+                    </div>
+
+                    <div class="offer_element" id="e6">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Wygodny kontakt</h4>
+                        <div class="description">Luźna atmosfera i dowolna forma kontaktu</div>
+                    </div>
+                </div>
+
             </div>
-            <h4>Wygodny kontakt</h4>
-            <div class="description">Luźna atmosfera i dowolna forma kontaktu</div>
         </div>
+        <footer>
+            <div class="socials">
+                <a href="https://www.facebook.com/pawelciupka" target="_blank">
+                    <i class="fab fa-facebook fb"></i>
+                </a>
+
+                <a href="https://github.com/PawelCiupka" target="_blank">
+                    <i class="fab fa-github git"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/pawe%C5%82-ciupka-019a60147/" target="_blank">
+                    <i class="fab fa-linkedin linkedIn"></i>
+                </a>
+            </div>
+
+            <span>
+                &copy Paweł Ciupka 2018
+            </span>
+        </footer>
     </div>
 
+    <script src="../scripts/menuScript.js"></script>
+    <script src="../scripts/offerScript.js"></script>
 </body>
 
 </html>
