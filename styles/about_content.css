@@ -39,7 +39,7 @@ p:nth-child(7), p:nth-child(8) {
     background: rgb(170, 231, 255);
 }
 
-#yes, #no {
+#no, #yes {
     font-size: 0.9em;
     border: 0;
     background: #fff;
@@ -48,37 +48,9 @@ p:nth-child(7), p:nth-child(8) {
     font-family: 'Dosis', sans-serif;
 }
 
-.social {
-    font-size: 1em;
-    margin: 0;
-}
-
-.social p {
-    margin: 0;
-}
-
-.social a {
+#yes {
+    color: black;
     text-decoration: none;
-    color: #000;
-}
-
-.fb, .git, .linkedIn {
-    font-size: 2em;
-    margin: 0 0.4em 0 0;
-    transition-duration: 0.2s;
-}
-
-.fb:hover, .git:hover, .linkedIn:hover {
-    opacity: 0.92;
-    cursor: pointer;
-}
-
-.fb {
-    color: #3b5998;
-}
-
-.linkedIn {
-    color:  #007bb6;
 }
 
 @media screen and (max-width: 768px) {
@@ -96,7 +68,7 @@ p:nth-child(7), p:nth-child(8) {
         margin: 0;
     }
     
-    .social p{
+    .social p {
         font-size: 1em;
         margin: 1em 0 0 0;
     }
