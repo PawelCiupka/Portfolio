@@ -6,10 +6,6 @@ document.getElementById('e1').addEventListener("mouseleave", function () {
   hideDescription('e1');
 });
 
-document.getElementById('e1').addEventListener('click', function () {
-  showDescribeOnMobile('e1')
-});
-
 
 document.getElementById('e2').addEventListener("mouseenter", function () {
   showDescription('e2');
@@ -17,10 +13,6 @@ document.getElementById('e2').addEventListener("mouseenter", function () {
 
 document.getElementById('e2').addEventListener("mouseleave", function () {
   hideDescription('e2');
-});
-
-document.getElementById('e2').addEventListener('click', function () {
-  showDescribeOnMobile('e2')
 });
 
 
@@ -32,10 +24,6 @@ document.getElementById('e3').addEventListener("mouseleave", function () {
   hideDescription('e3');
 });
 
-document.getElementById('e3').addEventListener('click', function () {
-  showDescribeOnMobile('e3')
-});
-
 
 document.getElementById('e4').addEventListener("mouseenter", function () {
   showDescription('e4');
@@ -43,10 +31,6 @@ document.getElementById('e4').addEventListener("mouseenter", function () {
 
 document.getElementById('e4').addEventListener("mouseleave", function () {
   hideDescription('e4');
-});
-
-document.getElementById('e4').addEventListener('click', function () {
-  showDescribeOnMobile('e4')
 });
 
 
@@ -58,10 +42,6 @@ document.getElementById('e5').addEventListener("mouseleave", function () {
   hideDescription('e5');
 });
 
-document.getElementById('e5').addEventListener('click', function () {
-  showDescribeOnMobile('e5')
-});
-
 
 document.getElementById('e6').addEventListener("mouseenter", function () {
   showDescription('e6');
@@ -71,9 +51,6 @@ document.getElementById('e6').addEventListener("mouseleave", function () {
   hideDescription('e6');
 });
 
-document.getElementById('e6').addEventListener('click', function () {
-  showDescribeOnMobile('e6')
-});
 
 
 function showDescription(divName) {

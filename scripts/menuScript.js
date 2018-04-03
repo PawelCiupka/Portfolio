@@ -1,6 +1,4 @@
-document.getElementById('photo').addEventListener('click', function () {
-  location.reload();
-});
+
 
 document.getElementById('hamburger').addEventListener('click', function () {
   openMenu();

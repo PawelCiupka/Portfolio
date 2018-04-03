@@ -156,6 +156,11 @@ menu#desktop-menu ul#desktop-ul li.desktop-li a {
 	font-size: 0.75em;
 }
 
+#downloadCV {
+	text-decoration: none;
+	color: #3180fd;
+}
+
 .back {
 	margin: 2em 0 0 0;
 }
