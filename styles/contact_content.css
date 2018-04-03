@@ -57,6 +57,10 @@ form span {
     p {
         font-size: 1.3em;
     }
+    
+    p:nth-child(2) {
+        margin: 0 0 0.5em 0;
+    }
 
     p:nth-child(3) {
         margin: 0 0 1em 0;

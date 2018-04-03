@@ -327,7 +327,7 @@ footer .socials a {
 	}
 
 	.mobile-menu li a {		
-		width: 100%;
+		width: 90%;
 		height: 100%;
 
 		position: absolute;
@@ -432,7 +432,7 @@ footer .socials a {
 		}
 
 		.container {
-			grid-template-rows: 4em 13em 13em minmax(20em, auto) 1em;
+			grid-template-rows: 4em 13em 13em minmax(22em, auto) 1em;
 		}
 
 		.profile-photo img {
@@ -442,6 +442,10 @@ footer .socials a {
 
 		.mobile-menu li {
 			height: 4.375em;
+		}
+
+		#content {
+			margin: 0 0 2em 0;
 		}
 
 		@media screen and (max-height: 370px) {
