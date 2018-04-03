@@ -1,3 +1,12 @@
+document.getElementById('left_button').addEventListener('click', function () {
+  showNextElement('a_img', 'circle', 3, 0.02, -1);
+});
+
+document.getElementById('right_button').addEventListener('click', function () {
+  showNextElement('a_img', 'circle', 3, 0.02, 1);
+});
+
+
 iElem = 0;
 zElem = 1;
 function showNextElement(elementName, circleName, numberOfElements, diff, direction) {

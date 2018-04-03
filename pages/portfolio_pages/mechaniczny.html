@@ -1,37 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 
-<head lang="pl">
-    <link rel="stylesheet" href="styles/portfolio_pages.css">
+<head>
+    <title>Portfolio - Mechaniczny | Paweł Ciupka | Front-end Developer & Freelancer</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Cześć! Nazywam się Paweł Ciupka, a to moje portfolio. Jestem studentem informatyki, freelancerem i front-end web developerem. Moją pasją jest tworzenie stron WWW. Wpadnij i sam się o tym przekonaj!">
+
+    <link rel="Shortcut icon" href="../../photos/logo.png" />
+    <link rel="stylesheet" href="../../styles/index_style.css">
+    <link rel="stylesheet" href="../../styles/portfolio_pages.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <p class="pageDescribe">
-        Strona została wykonana dla Wydziałowej Rady Samorządu Mechanicznego Politechniki Łódzkiej. Projekt jak i jego realizacja
-        zostały wykonane przeze mnie. Stworzyłem ją korzystając z podejścia mobile-first. Strona jest responsywna, wygląda
-        świetnie zarówno na smartfonie, tablecie jak i komputerze. Nie korzystałem z żadnych bibliotek zewnętrznych, wszystkie
-        arkusze stylów zostały napisanie samodzielnie.
-    </p>
+    <div id="container" class="container">
+        <header id="header">
+            <div id="hamburger" class="hamburger1" tabindex="1"></div>
+        </header>
 
-    <p>
-        Po realizacji projektu:
-    </p>
+        <div class="profile-photo">
+            <img id="photo" src="../../photos/profile_photo.png" alt="Profile Picture">
+        </div>
 
-    <ul class="learnedList">
-        <li>Potrafię tworzyć strony korzystając z podejścia mobile-first.</li>
-        <li>Czuję się pewniej w technice RWD oraz Flexbox.</li>
-    </ul>
+        <div class="information">
+            <h1>Paweł Ciupka</h1>
+            <h2 class="worksite">Student & Freelancer</h2>
+        </div>
 
-    <p>
-        Link do strony:
-        <a href="http://www.mechaniczny.pawel-ciupka.pl" target="_blank" class="pageLink">WRS Mechaniczny</a>
-    </p>
-    <p>
-        Link do Git'a:
-        <a href="https://github.com/PawelCiupka/WRS_Mechaniczny" target="_blank" class="pageLink">Repozytorium</a>
-    </p>
+        <div class="hire">
+            <a href="../contact.html">Skontaktuj się</a>
+        </div>
 
-    <button onclick="load_view('content', 'contents/portfolio.html')" id="back">Wróć</button>
+        <!-- Desktop menu -->
+        <menu id="desktop-menu">
+            <ul id="desktop-ul">
+                <li class="desktop-li">
+                    <a href="../about.html">O mnie</a>
+                </li>
+                <li class="desktop-li">
+                    <a href="../offer.html">Oferta</a>
+                </li>
+                <li class="desktop-li">
+                    <a href="../portfolio.html">Portfolio</a>
+                </li>
+            </ul>
+        </menu>
+
+        <!-- Mobile menu -->
+        <ul id="mobile-ul" class="mobile-menu">
+            <li class="mobile-li">
+                <a href="../about.html">O mnie</a>
+            </li>
+            <li class="mobile-li">
+                <a href="../offer.html">Oferta</a>
+            </li>
+            <li class="mobile-li">
+                <a href="../portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-li">
+                <a href="../contact.html">Skontaktuj się</a>
+            </li>
+        </ul>
+
+        <div class="right-section">
+            <div id="content">
+
+                <p class="pageDescribe">
+                    Strona została wykonana dla Wydziałowej Rady Samorządu Mechanicznego Politechniki Łódzkiej. Projekt jak i jego realizacja
+                    zostały wykonane przeze mnie. Stworzyłem ją korzystając z podejścia mobile-first. Strona jest responsywna,
+                    wygląda świetnie zarówno na smartfonie, tablecie jak i komputerze. Nie korzystałem z żadnych bibliotek
+                    zewnętrznych, wszystkie arkusze stylów zostały napisanie samodzielnie.
+                </p>
+
+                <p>
+                    Po realizacji projektu:
+                </p>
+
+                <ul class="learnedList">
+                    <li>Potrafię tworzyć strony korzystając z podejścia mobile-first.</li>
+                    <li>Czuję się pewniej w technice RWD oraz Flexbox.</li>
+                </ul>
+
+                <p>
+                    Link do strony:
+                    <a href="http://www.mechaniczny.pawel-ciupka.pl" target="_blank" class="pageLink">WRS Mechaniczny</a>
+                </p>
+                <p>
+                    Link do Git'a:
+                    <a href="https://github.com/PawelCiupka/WRS_Mechaniczny" target="_blank" class="pageLink">Repozytorium</a>
+                </p>
+
+                <div class="back">
+                    <a href="../portfolio.html">Wróć</a>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            <div class="socials">
+                <a href="https://www.facebook.com/pawelciupka" target="_blank">
+                    <i class="fab fa-facebook fb"></i>
+                </a>
+
+                <a href="https://github.com/PawelCiupka" target="_blank">
+                    <i class="fab fa-github git"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/pawe%C5%82-ciupka-019a60147/" target="_blank">
+                    <i class="fab fa-linkedin linkedIn"></i>
+                </a>
+            </div>
+
+            <span>
+                &copy Paweł Ciupka 2018
+            </span>
+        </footer>
+    </div>
+
+    <script src="../../scripts/menuScript.js"></script>
 </body>
 
 </html>

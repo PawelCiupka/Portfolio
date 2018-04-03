@@ -1,41 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 
-<head lang="pl">
-    <link rel="stylesheet" href="styles/portfolio_content.css">
+<head>
+    <title>Portfolio - Projekty | Paweł Ciupka | Front-end Developer & Freelancer</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Cześć! Nazywam się Paweł Ciupka, a to moje portfolio. Jestem studentem informatyki, freelancerem i front-end web developerem. Moją pasją jest tworzenie stron WWW. Wpadnij i sam się o tym przekonaj!">
+
+    <link rel="Shortcut icon" href="../photos/logo.png" />
+    <link rel="stylesheet" href="../styles/index_style.css">
+    <link rel="stylesheet" href="../styles/portfolio_content.css">
+    <link rel="stylesheet" href="../styles/portfolio_pages.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <div id="slider">
-        <div class="sliderUp">
-            <button id="left_button" onclick="showNextElement('a_img', 'circle', 3, 0.02, -1)">
-                <</button>
-                    <div id="img_containter">
+    <div id="container" class="container">
+        <header id="header">
+            <div id="hamburger" class="hamburger1" tabindex="1"></div>
+        </header>
 
-                        <div onclick="load_view('content', 'contents/portfolio_pages/mechaniczny.html')" class="a_img">
-                            <img class="page_img" src="photos/WRS_Mechaniczny.png" alt="Grafika przedstawiająca strone WRS'u Mechanicznego Politechniki Łódzkiej.">
-                        </div>
-
-                        <div onclick="load_view('content', 'contents/portfolio_pages/flying_figure.html')" class="a_img">
-                            <img class="page_img" src="photos/flying_figure.png" alt="Grafika przedstawiająca gry flying_figure.">
-                        </div>
-
-                        <div onclick="load_view('content', 'contents/portfolio_pages/portfolioPage.html')" class="a_img">
-                            <img class="page_img" src="photos/Portfolio.png" alt="Grafika przedstawiająca stronę mojego portfolio.">
-                        </div>
-
-                    </div>
-                    <button id="right_button" onclick="showNextElement('a_img', 'circle', 3, 0.02, 1)">></button>
+        <div class="profile-photo">
+            <img id="photo" src="../photos/profile_photo.png" alt="Profile Picture">
         </div>
 
-        <div class="sliderDown">
-            <div id="choice_belt">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
+        <div class="information">
+            <h1>Paweł Ciupka</h1>
+            <h2 class="worksite">Student & Freelancer</h2>
+        </div>
+
+        <div class="hire">
+            <a href="contact.html">Skontaktuj się</a>
+        </div>
+
+        <!-- Desktop menu -->
+        <menu id="desktop-menu">
+            <ul id="desktop-ul">
+                <li class="desktop-li">
+                    <a href="about.html">O mnie</a>
+                </li>
+                <li class="desktop-li">
+                    <a href="offer.html">Oferta</a>
+                </li>
+                <li class="desktop-li">
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+            </ul>
+        </menu>
+
+        <!-- Mobile menu -->
+        <ul id="mobile-ul" class="mobile-menu">
+            <li class="mobile-li">
+                <a href="about.html">O mnie</a>
+            </li>
+            <li class="mobile-li">
+                <a href="offer.html">Oferta</a>
+            </li>
+            <li class="mobile-li">
+                <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-li">
+                <a href="contact.html">Skontaktuj się</a>
+            </li>
+        </ul>
+
+        <div class="right-section">
+            <div id="content">
+
+                <div id="slider">
+                    <div class="sliderUp">
+                        <button id="left_button">
+                            <</button>
+                                <div id="img_containter">
+
+                                    <div id="mechaniczny" class="a_img">
+                                        <a href="portfolio_pages/mechaniczny.html">
+                                            <img class="page_img" src="../photos/WRS_Mechaniczny.png" alt="Grafika przedstawiająca strone WRS'u Mechanicznego Politechniki Łódzkiej.">
+                                        </a>
+                                    </div>
+
+                                    <div id="flyingFigure" class="a_img">
+                                        <a href="portfolio_pages/flying_figure.html">
+                                            <img class="page_img" src="../photos/flying_figure.png" alt="Grafika przedstawiająca gry flying_figure.">
+                                        </a>
+                                    </div>
+
+                                    <div id="portfolio" class="a_img">
+                                        <a href="portfolio_pages/portfolioPage.html">
+                                            <img class="page_img" src="../photos/Portfolio.png" alt="Grafika przedstawiająca stronę mojego portfolio.">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <button id="right_button">></button>
+                    </div>
+
+                    <div class="sliderDown">
+                        <div id="choice_belt">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
+        <footer>
+            <div class="socials">
+                <a href="https://www.facebook.com/pawelciupka" target="_blank">
+                    <i class="fab fa-facebook fb"></i>
+                </a>
+
+                <a href="https://github.com/PawelCiupka" target="_blank">
+                    <i class="fab fa-github git"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/pawe%C5%82-ciupka-019a60147/" target="_blank">
+                    <i class="fab fa-linkedin linkedIn"></i>
+                </a>
+            </div>
+
+            <span>
+                &copy Paweł Ciupka 2018
+            </span>
+        </footer>
     </div>
+
+    <script src="../scripts/menuScript.js"></script>
+    <script src="../scripts/portfolioScript.js"></script>
 </body>
 
 </html>
