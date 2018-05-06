@@ -1,9 +1,9 @@
 document.getElementById('left_button').addEventListener('click', function () {
-  showNextElement('a_img', 'circle', 3, 0.02, -1);
+  showNextElement('a_img', 'circle', 4, 0.02, -1);
 });
 
 document.getElementById('right_button').addEventListener('click', function () {
-  showNextElement('a_img', 'circle', 3, 0.02, 1);
+  showNextElement('a_img', 'circle', 4, 0.02, 1);
 });
 
 
